@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative login</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: arial, sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            background-image: url(backgroundimg.webp);
+            position: static;
+            background-size: cover;
+        }
+
+        .login-box {
+            width: 320px;
+            padding: 30px;
+            border-radius: 15px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(255,255,255,0.3);
+            box-shadow: 0 8px 32px rgba(0,0,0,0,3);
+            text-align: center;
+        }
+
+        .login-box h2 {
+            color: #fff;
+            margin-bottom: 20px;
+        }
+
+        .input-box {
+            margin: 15px 0;
+        }
+
+        .input-box input {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            outline: none;
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.2);
+            color: #fff;
+        }
+
+        .input-box input::placeholder {
+            color: #ddd;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 15px;
+            border: none;
+            border-radius: 8px;
+            background: #fff;
+            color: #333;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #ffcc70;
+            transform: scale(1.05);
+        }
+
+        .login-box p {
+            margin-top: 15px;
+            color: #fff;
+            font-size: 14px;
+        }
+
+        .login-box a {
+            color: #ffcc70;
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="login-box">
+        <h2>Login</h2>
+
+        <div class="input-box">
+            <input type="text" 
+            placeholder="Username">
+        </div>
+
+        <div class="input-box">
+            <input type="password"
+            placeholder="Password">
+        </div>
+
+        <button>Login</button>
+
+        <p>Don't have an account? <a href="#">Signup</a></p>
+    </div>
+
+</body>
+</html>
